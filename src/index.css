@@ -8,14 +8,14 @@
 
 :root {
   --clr-white: #FFFFFF;
-  --clr-black: #202020;
-  --clr-grey: #303136;
-  --clr-light-grey: #363940;
-  --clr-dark-grey: #212226;
+  --clr-black: #ffffff;
+  --clr-grey: #274a3c;
+  --clr-light-grey: #377e64;
+  --clr-dark-grey: #162e25;
   --clr-blue: #5865F2;
   --clr-green: #34AB55;
-
-  --clr-text-grey: #66666e;
+  --clr-background-translucent: rgba(255, 255, 255, 0.8);
+  --clr-text-grey: #ffffff;
 }
 
 body {
@@ -23,6 +23,9 @@ body {
   font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('bg1.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 /* ------------------------------------------------------ */
@@ -218,7 +221,7 @@ main {
 }
 
 .text .message img {
-  background-color: var(--clr-grey);
+  background-color: #FFFFFF;
 
   width: 50px;
   height: 50px;
@@ -247,17 +250,19 @@ main {
 
 .text form {
   grid-row: 11/13;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .text form input[type="text"] {
   grid-row: 11/13;
 
-  background-color: var(--clr-grey);
+  background-color: #274a3c;
   color: var(--clr-white);
+  
 
   border: none;
   border-radius: 6px 0 0 6px;
@@ -271,8 +276,8 @@ main {
 }
 
 .text form button {
-  background-color: var(--clr-grey);
-
+  background-color: #FFFFFF;
+  
   width: 60px;
   height: 40%;
   padding: 10px;
@@ -285,10 +290,11 @@ main {
 }
 
 .text form button:hover {
-  background-color: var(--clr-dark-grey);
+  background-color: #5865F2;
 }
 
 .text form img {
+  filter: brightness(0);
   width: 25px;
   height: 25px;
 }
